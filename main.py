@@ -149,3 +149,7 @@ def plot_confusion_matrix_map(model, X_test, y_train):
 plot_confusion_matrix_map(svm_grid, X_test_scaled, y_test)
 plot_confusion_matrix_map(rf_grid, X_test, y_test)
 plot_confusion_matrix_map(et_grid, X_test, y_test)
+
+import pickle
+filename='trained_model.sav'
+pickle.dump(svm_grid, open(filename, 'wb'))
