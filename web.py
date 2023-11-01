@@ -3,8 +3,7 @@ import pandas as pd
 import pickle
 
 # Cargar el modelo entrenado
-filename = 'trained_model.sav'  # Asegúrate de tener el nombre correcto de tu archivo de modelo
-loaded_model = pickle.load(open(filename, 'rb'))
+loaded_model = pickle.load(open('./trained_model.sav', 'rb'))
 
 st.title('Predictor de Objetivo o Subjetivo')
 
